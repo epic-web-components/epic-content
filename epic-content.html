@@ -258,37 +258,8 @@ Example:
     // Element Behavior
 
     handleResponse: function(e, detail){
-      console.log(e);
-      console.log(detail.response);
+
     },
-
-    /**
-     * The `epic-content-lasers` event is fired whenever `fireLasers` is called.
-     *
-     * @event epic-content-lasers
-     * @detail {{sound: String}}
-     */
-
-    /**
-     * Sometimes it's just nice to say hi.
-     *
-     * @param {string} greeting A positive greeting.
-     * @return {string} The full greeting.
-     */
-    sayHello: function(greeting) {
-      var response = greeting || 'Hello World!';
-      return 'epic-content says, ' + response;
-    },
-
-    /**
-     * Attempt to destroy this element's enemies with a beam of light!
-     *
-     * Or, at least, dispatch an event in the vain hope that someone else will
-     * do the zapping.
-     */
-    fireLasers: function() {
-      this.fire('epic-content-lasers', {sound: 'Pew pew!'});
-    }
 
   });
 
